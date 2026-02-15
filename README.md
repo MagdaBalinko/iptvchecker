@@ -1,24 +1,35 @@
 Hi All
 
-The purpose of this Python script/windows executable is to help other IPTV users to determine their connection is working, get total number of Live Channel
-groups, a list if Live Channel groups and channels, exported into a CSV format, using Xtreme API credentials.
+## IPTV Checker
 
-It's based on Ron Mexico's and NewsGuyTor's great ideas, with a basic GUI and a couple of minot extra functionalities added. Go and check out their repos
+A simple GUI tool that checks your IPTV connection using an Xtream API login, fetches live channel data and exports information to CSV. It uses FFmpeg/FFprobe to probe streams and determine their status.
+
+It bundles the necessary Python libraries, so users do **not need to install Python**.
+
+
+It's based on Ron Mexico's and NewsGuyTor's great ideas, with a basic GUI and a couple of minor extra functionalities added. Go and check out their repos
 
 https://github.com/sudo-ronmexico/IPTVChecker-BitRate
 
 https://github.com/NewsGuyTor/IPTVChecker
 
-The idea behind is with the increasing popularity of ITPV services and the wast number of Channel Groups/Countiries suppplied. When you get a new sub
+The idea behind is with the increasing popularity of ITPV services and the vast number of channel groups/countries supplied. When you get a new sub
 it can be extremely overwhelming to determine what groups, channels you plan to disable to make your playlist more user friendly. I personally struggled
 with this, even when using great tools like m3u-editor or Dispatcharr so I decide I use AI to combine existing tools into a new one. It's entirely AI coded, 
 my input is just the list of functions and the basic GUI design.
 
-I come to a stage when I think it's worth sharing, both the Pyhton script and a small Windows excecutable.
+I come to a stage when I think it's worth sharing, both the Pyhton script and a small Windows Executable.
 
-Prerequisites
-ffmpeg & ffprobe installed and accessible via Windows path
-EXE bundles the necessary Python libraries
+## Requirements
+
+Before using this tool you must have:
+
+- **FFmpeg** installed and added to your system PATH
+- **FFprobe** installed and added to your system PATH
+- **Your own** playlist / Xtreme API login details
+
+> The EXE includes all required Python libraries — users do **not** need to install Python.
+
 
 Usage:
 1. Give a name to the service, this will be included in the filename (with date stamp)
@@ -53,6 +64,11 @@ For 4.C
 
 <img width="1251" height="57" alt="image" src="https://github.com/user-attachments/assets/cacd314a-8da2-4531-8985-ad054e3a4c52" />
 
+## Downloads
+
+Precompiled Windows executable and Python script are available on the **Releases** page:
+👉 https://github.com/MagdaBalinko/iptvchecker/releases
+
 
 Extra features/important stuff
 
@@ -64,6 +80,10 @@ Extra features/important stuff
 <img width="848" height="597" alt="image" src="https://github.com/user-attachments/assets/7d57adc8-6d3d-496f-86e9-4007184a5fd9" />
 
 Disclaimer: I tested it with 4-5 different provider via Xtreme API login (m3u is not supported) it worked with all except one. 
+
+## Contributing
+
+Issues and pull requests are welcome! Feel free to suggest improvements.
 
 
 That's all, Folks! 
