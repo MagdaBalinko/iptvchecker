@@ -22,14 +22,30 @@ I come to a stage when I think it's worth sharing, both the Pyhton script and a 
 
 ## Requirements
 
-Before using this tool you must have:
+Before running the tool, make sure you have **FFmpeg** and **FFprobe** installed on your machine and accessible from the command line.
 
-- **FFmpeg** installed and added to your system PATH
-- **FFprobe** installed and added to your system PATH
+- Download FFmpeg from [here](https://ffmpeg.org/download.html).
+- Ensure **FFmpeg** and **FFprobe** are added to your system's **PATH** environment variable.
+
+> You can verify this by running:
+```bash
+ffmpeg -version
+ffprobe -version
+
 - **Your own** playlist / Xtreme API login details
 
 > The EXE includes all required Python libraries — users do **not** need to install Python.
 
+### Running as Python Script
+
+If you prefer to run the Python script directly, follow these steps:
+
+1. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+2. Run the Python script:
+python IPTV_Checker_v2_4.py
 
 Usage:
 1. Give a name to the service, this will be included in the filename (with date stamp)
